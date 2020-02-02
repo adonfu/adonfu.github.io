@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-02T15:11:37.783Z</updated>
+  <updated>2020-02-02T15:27:20.974Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,84 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>git_cmd</title>
+    <link href="http://yoursite.com/2020/02/02/git-cmd/"/>
+    <id>http://yoursite.com/2020/02/02/git-cmd/</id>
+    <published>2020-02-02T15:23:39.000Z</published>
+    <updated>2020-02-02T15:27:20.974Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Git-global-setup"><a href="#Git-global-setup" class="headerlink" title="Git global setup"></a>Git global setup</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"YadongFu"</span></span><br><span class="line">$ git config --global user.email <span class="string">"ydfu@aibee.com"</span></span><br></pre></td></tr></table></figure><h4 id="Create-a-new-repository"><a href="#Create-a-new-repository" class="headerlink" title="Create a new repository"></a>Create a new repository</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://code.aibee.cn/ydfu/testinit.git</span><br><span class="line">$ <span class="built_in">cd</span> testinit</span><br><span class="line">$ touch README.md</span><br><span class="line">$ git add README.md</span><br><span class="line">$ git commit -m <span class="string">"add README"</span></span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure><h4 id="Push-an-existing-folder"><a href="#Push-an-existing-folder" class="headerlink" title="Push an existing folder"></a>Push an existing folder</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> existing_folder</span><br><span class="line">$ git init</span><br><span class="line">$ git remote add origin https://code.aibee.cn/ydfu/testinit.git</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"Initial commit"</span></span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure><h4 id="Push-an-existing-Git-repository"><a href="#Push-an-existing-Git-repository" class="headerlink" title="Push an existing Git repository"></a>Push an existing Git repository</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> existing_repo</span><br><span class="line">$ git remote rename origin old-origin</span><br><span class="line">$ git remote add origin https://code.aibee.cn/ydfu/testinit.git</span><br><span class="line">$ git push -u origin --all</span><br><span class="line">$ git push -u origin --tags</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Git-global-setup&quot;&gt;&lt;a href=&quot;#Git-global-setup&quot; class=&quot;headerlink&quot; title=&quot;Git global setup&quot;&gt;&lt;/a&gt;Git global setup&lt;/h4&gt;&lt;figure class=&quot;hi
+      
+    
+    </summary>
+    
+    
+    
+      <category term="运维" scheme="http://yoursite.com/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>bash_shell</title>
+    <link href="http://yoursite.com/2020/02/02/bash-shell/"/>
+    <id>http://yoursite.com/2020/02/02/bash-shell/</id>
+    <published>2020-02-02T15:19:33.000Z</published>
+    <updated>2020-02-02T15:23:14.155Z</updated>
+    
+    <content type="html"><![CDATA[<p>shell普通变量：包含字母、数字和下划线;</p><h3 id="shell-特殊变量"><a href="#shell-特殊变量" class="headerlink" title="shell 特殊变量"></a>shell 特殊变量</h3><div class="table-container"><table><thead><tr><th>变量</th><th>含义</th></tr></thead><tbody><tr><td>$0</td><td>当前脚本的文件名</td></tr><tr><td>$n</td><td>传递给脚本或函数的参数。n 是一个数字，表示第几个参数。例如，第一个参数是1，第二个参数是2</td></tr><tr><td>$#</td><td>传递给脚本或函数的参数个数</td></tr><tr><td>$*</td><td>传递给脚本或函数的所有参数</td></tr><tr><td>$@</td><td>传递给脚本或函数的所有参数; 被双引号(“ “)包含时，与 $* 稍有不同</td></tr><tr><td>$?</td><td>上个命令的退出状态，或函数的返回值</td></tr><tr><td>$$</td><td>当前 Shell 进程 ID。对于 Shell 脚本，就是这些脚本所在的进程 ID</td></tr></tbody></table></div><p>*和@的区别：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">∗和 @ 都表示传递给函数或脚本的所有参数，不被双引号(" ")包含时，都以"1""2" … "$n" 的形式输出所有参数。</span><br><span class="line">但是当它们被双引号(" ")包含时，"∗"会将所有的参数作为一个整体，以"1 2…n"的形式输出所有参数；"@"会将各个参数分开，以"1" "2"…"n" 的形式输出所有参数。</span><br></pre></td></tr></table></figure><h3 id="shell-if判断"><a href="#shell-if判断" class="headerlink" title="shell if判断"></a>shell if判断</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if [ -f "$file" ] then</span><br><span class="line">echo "Ture"</span><br><span class="line">else</span><br><span class="line">echo "False"</span><br></pre></td></tr></table></figure><p>-f file    : file是文件为True</p><p>-d file    : 是目录为True</p><p>-r file    : file可读为True</p><p>-s file    : file</p><p>-w file    : file可写为true</p><p>-x file    : file 可执行为true</p><p>-n $str1    :     $str1不是null 为True</p><p>-z $str1    :    $str1是null，为true</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;shell普通变量：包含字母、数字和下划线;&lt;/p&gt;
+&lt;h3 id=&quot;shell-特殊变量&quot;&gt;&lt;a href=&quot;#shell-特殊变量&quot; class=&quot;headerlink&quot; title=&quot;shell 特殊变量&quot;&gt;&lt;/a&gt;shell 特殊变量&lt;/h3&gt;&lt;div class=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>visual studio 常用快捷键</title>
+    <link href="http://yoursite.com/2020/02/02/visual-studio-key-map/"/>
+    <id>http://yoursite.com/2020/02/02/visual-studio-key-map/</id>
+    <published>2020-02-02T15:17:48.000Z</published>
+    <updated>2020-02-02T15:19:03.748Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># control + `   切换到终端</span><br><span class="line"># cmd + shift + k删除一行</span><br><span class="line"># cmd + d选择同一个文件中相同单词</span><br><span class="line"># shift + alt +↑\↓复制一行文字到下一行/上一行</span><br><span class="line"># cmd + shift + enter向上插入空行</span><br><span class="line"># cmd + enter向下插入空行</span><br><span class="line"># cmd + delete 删除光标左边的文字</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line
+      
+    
+    </summary>
+    
+    
+    
+      <category term="运维" scheme="http://yoursite.com/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python tricks</title>
     <link href="http://yoursite.com/2020/01/26/python_tricks/"/>
     <id>http://yoursite.com/2020/01/26/python_tricks/</id>
     <published>2020-01-26T10:21:28.000Z</published>
-    <updated>2020-02-02T15:11:37.783Z</updated>
+    <updated>2020-02-02T15:16:01.412Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Init-dict"><a href="#Init-dict" class="headerlink" title="Init dict"></a>Init dict</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a = dict(([<span class="string">'name'</span>, <span class="string">'Tom'</span>], [<span class="string">'age'</span>, <span class="number">30</span>]))<span class="comment">#out: &#123;'name': 'Tom', 'age': 30&#125;</span></span><br><span class="line">b = dict(zip([<span class="string">'name'</span>, <span class="string">'age'</span>], [<span class="string">'Tom'</span>, <span class="number">30</span>]))<span class="comment">#out: &#123;'name': 'Tom', 'age': 30&#125;</span></span><br><span class="line">c = dict.fromkeys([<span class="string">'name'</span>, <span class="string">'age'</span>], <span class="number">0</span>)<span class="comment">#out: &#123;'name': 0, 'age': 0&#125;</span></span><br><span class="line">d = &#123;k:<span class="number">0</span> <span class="keyword">for</span> k <span class="keyword">in</span> [<span class="string">'name'</span>, <span class="string">'age'</span>]&#125;<span class="comment">#out: &#123;'name': 0, 'age': 0&#125;</span></span><br><span class="line">e = &#123;k:v <span class="keyword">for</span> (k,v) <span class="keyword">in</span> zip([<span class="string">'name'</span>, <span class="string">'age'</span>], [<span class="string">'Tom'</span>, <span class="number">30</span>])&#125;<span class="comment">#out: &#123;'name': 'Tom', 'age': 30&#125;</span></span><br><span class="line">f = dict(name=<span class="string">'Tom'</span>, age=<span class="number">30</span>)<span class="comment">#out: &#123;'name': 'Tom', 'age': 30&#125;</span></span><br><span class="line">g = &#123;<span class="string">'name'</span>: <span class="string">'Tom'</span>, <span class="string">'age'</span>: <span class="number">30</span>&#125;<span class="comment">#out: &#123;'name': 'Tom', 'age': 30&#125;</span></span><br><span class="line">h = &#123;&#125;</span><br><span class="line">h[<span class="string">'name'</span>] = <span class="string">'Tom'</span></span><br><span class="line">h[<span class="string">'age'</span>] = <span class="number">30</span><span class="comment">#out: &#123;'name': 'Tom', 'age': 30&#125;</span></span><br></pre></td></tr></table></figure>]]></content>
     

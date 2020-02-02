@@ -46,24 +46,20 @@
   };
 </script>
 
-  <meta name="description" content="热爱技术、喜欢钻研">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+  <meta name="description" content="Git global setup12$ git config --global user.name &quot;YadongFu&quot;$ git config --global user.email &quot;ydfu@aibee.com&quot; Create a new repository123456$ git clone https:&#x2F;&#x2F;code.aibee.cn&#x2F;ydfu&#x2F;testinit.git$ cd testi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git_cmd">
+<meta property="og:url" content="http://yoursite.com/2020/02/02/git-cmd/index.html">
 <meta property="og:site_name" content="Adon">
-<meta property="og:description" content="热爱技术、喜欢钻研">
+<meta property="og:description" content="Git global setup12$ git config --global user.name &quot;YadongFu&quot;$ git config --global user.email &quot;ydfu@aibee.com&quot; Create a new repository123456$ git clone https:&#x2F;&#x2F;code.aibee.cn&#x2F;ydfu&#x2F;testinit.git$ cd testi">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-01-26T10:37:30.000Z">
-<meta property="article:modified_time" content="2020-01-26T10:38:28.939Z">
+<meta property="article:published_time" content="2020-02-02T15:23:39.000Z">
+<meta property="article:modified_time" content="2020-02-02T15:27:20.974Z">
 <meta property="article:author" content="fuyd">
-<meta property="article:tag" content="Python">
-<meta property="article:tag" content=" C">
-<meta property="article:tag" content=" Java">
-<meta property="article:tag" content=" Go">
-<meta property="article:tag" content=" Web应用开发，服务端研发">
+<meta property="article:tag" content="运维">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/categories/">
+<link rel="canonical" href="http://yoursite.com/2020/02/02/git-cmd/">
 
 
 <script id="page-configurations">
@@ -71,12 +67,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false
+    isPost: true
   };
 </script>
 
-  <title>categories | Adon
-  </title>
+  <title>git_cmd | Adon</title>
   
 
 
@@ -206,57 +201,93 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/02/git-cmd/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar2.png">
+      <meta itemprop="name" content="fuyd">
+      <meta itemprop="description" content="热爱技术、喜欢钻研">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Adon">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          git_cmd
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2020-02-02 23:23:39 / 修改时间：23:27:20" itemprop="dateCreated datePublished" datetime="2020-02-02T23:23:39+08:00">2020-02-02</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h4 id="Git-global-setup"><a href="#Git-global-setup" class="headerlink" title="Git global setup"></a>Git global setup</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"YadongFu"</span></span><br><span class="line">$ git config --global user.email <span class="string">"ydfu@aibee.com"</span></span><br></pre></td></tr></table></figure>
+<h4 id="Create-a-new-repository"><a href="#Create-a-new-repository" class="headerlink" title="Create a new repository"></a>Create a new repository</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://code.aibee.cn/ydfu/testinit.git</span><br><span class="line">$ <span class="built_in">cd</span> testinit</span><br><span class="line">$ touch README.md</span><br><span class="line">$ git add README.md</span><br><span class="line">$ git commit -m <span class="string">"add README"</span></span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<h4 id="Push-an-existing-folder"><a href="#Push-an-existing-folder" class="headerlink" title="Push an existing folder"></a>Push an existing folder</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> existing_folder</span><br><span class="line">$ git init</span><br><span class="line">$ git remote add origin https://code.aibee.cn/ydfu/testinit.git</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m <span class="string">"Initial commit"</span></span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+<h4 id="Push-an-existing-Git-repository"><a href="#Push-an-existing-Git-repository" class="headerlink" title="Push an existing Git repository"></a>Push an existing Git repository</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> existing_repo</span><br><span class="line">$ git remote rename origin old-origin</span><br><span class="line">$ git remote add origin https://code.aibee.cn/ydfu/testinit.git</span><br><span class="line">$ git push -u origin --all</span><br><span class="line">$ git push -u origin --tags</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%BF%90%E7%BB%B4/" rel="tag"># 运维</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/02/bash-shell/" rel="prev" title="bash_shell">
+      <i class="fa fa-chevron-left"></i> bash_shell
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              暂无分类
-            </div>
-            <div class="category-all">
-              
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
   </div>
 
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -303,6 +334,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git-global-setup"><span class="nav-number">1.</span> <span class="nav-text">Git global setup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Create-a-new-repository"><span class="nav-number">2.</span> <span class="nav-text">Create a new repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Push-an-existing-folder"><span class="nav-number">3.</span> <span class="nav-text">Push an existing folder</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Push-an-existing-Git-repository"><span class="nav-number">4.</span> <span class="nav-text">Push an existing Git repository</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -480,6 +512,25 @@ window.addEventListener('pjax:success', () => {
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '962c1c0df51bfa5707c2',
+      clientSecret: 'ef5b3bd43cba4a8a00bbf823630c514bd6dd5178',
+      repo: 'adonfu.github.io',
+      owner: 'adonfu',
+      admin: ['adonfu'],
+      id: 'dbcc50fc1759a64c635dd8d8d2dbcb25',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
     </div>
 </body>
