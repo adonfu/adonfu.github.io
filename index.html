@@ -299,7 +299,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-02-02 23:19:33 / 修改时间：23:32:32" itemprop="dateCreated datePublished" datetime="2020-02-02T23:19:33+08:00">2020-02-02</time>
+              <time title="创建时间：2020-02-02 23:19:33 / 修改时间：23:45:08" itemprop="dateCreated datePublished" datetime="2020-02-02T23:19:33+08:00">2020-02-02</time>
             </span>
 
           
@@ -365,6 +365,8 @@
 <p>-x file    : file 可执行为true</p>
 <p>-n $str1    :     $str1不是null 为True</p>
 <p>-z $str1    :    $str1是null，为true</p>
+<p>e.g 判断不同的操作系统</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$(uname)</span>"</span> == <span class="string">"Darwin"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Mac OS X 操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 5)"</span> == <span class="string">"Linux"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"GNU/Linux操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 10)"</span> == <span class="string">"MINGW32_NT"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Windows NT操作系统"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
