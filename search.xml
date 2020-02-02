@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>git_cmd</title>
+    <title>git init repository</title>
     <url>/2020/02/02/git-cmd/</url>
     <content><![CDATA[<h4 id="Git-global-setup"><a href="#Git-global-setup" class="headerlink" title="Git global setup"></a>Git global setup</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"YadongFu"</span></span><br><span class="line">$ git config --global user.email <span class="string">"ydfu@aibee.com"</span></span><br></pre></td></tr></table></figure>
 <h4 id="Create-a-new-repository"><a href="#Create-a-new-repository" class="headerlink" title="Create a new repository"></a>Create a new repository</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://code.aibee.cn/ydfu/testinit.git</span><br><span class="line">$ <span class="built_in">cd</span> testinit</span><br><span class="line">$ touch README.md</span><br><span class="line">$ git add README.md</span><br><span class="line">$ git commit -m <span class="string">"add README"</span></span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
@@ -13,7 +13,7 @@
       </tags>
   </entry>
   <entry>
-    <title>bash_shell</title>
+    <title>linux bash shell</title>
     <url>/2020/02/02/bash-shell/</url>
     <content><![CDATA[<p>shell普通变量：包含字母、数字和下划线;</p>
 <h3 id="shell-特殊变量"><a href="#shell-特殊变量" class="headerlink" title="shell 特殊变量"></a>shell 特殊变量</h3><div class="table-container">
