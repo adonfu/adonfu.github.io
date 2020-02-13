@@ -58,7 +58,7 @@
 </div>
 <p>*和@的区别：</p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">∗和 @ 都表示传递给函数或脚本的所有参数，不被双引号(" ")包含时，都以"1""2" … "$n" 的形式输出所有参数。</span><br><span class="line">但是当它们被双引号(" ")包含时，"∗"会将所有的参数作为一个整体，以"1 2…n"的形式输出所有参数；"@"会将各个参数分开，以"1" "2"…"n" 的形式输出所有参数。</span><br></pre></td></tr></table></figure>
-<h3 id="shell-if判断"><a href="#shell-if判断" class="headerlink" title="shell if判断"></a>shell if判断</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">if [ -f "$file" ] then</span><br><span class="line">	echo "Ture"</span><br><span class="line">else</span><br><span class="line">	echo "False"</span><br></pre></td></tr></table></figure>
+<h3 id="shell-if-语句"><a href="#shell-if-语句" class="headerlink" title="shell if 语句"></a>shell if 语句</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">if [ -f "$file" ] then</span><br><span class="line">	echo "Ture"</span><br><span class="line">else</span><br><span class="line">	echo "False"</span><br></pre></td></tr></table></figure>
 <p>-f file    : file是文件为True</p>
 <p>-d file    : 是目录为True</p>
 <p>-r file    : file可读为True</p>
@@ -69,6 +69,9 @@
 <p>-z $str1    :    $str1是null，为true</p>
 <p>e.g 判断不同的操作系统</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$(uname)</span>"</span> == <span class="string">"Darwin"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Mac OS X 操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 5)"</span> == <span class="string">"Linux"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"GNU/Linux操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 10)"</span> == <span class="string">"MINGW32_NT"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Windows NT操作系统"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<h3 id="Shell-printf-命令"><a href="#Shell-printf-命令" class="headerlink" title="Shell printf 命令"></a>Shell printf 命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">printf</span> -v str <span class="string">"%02d"</span> 1</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$str</span></span><br></pre></td></tr></table></figure>
+<h3 id="Shell-获取当前路径"><a href="#Shell-获取当前路径" class="headerlink" title="Shell 获取当前路径"></a>Shell 获取当前路径</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">D=$(<span class="built_in">cd</span> ~ &amp;&amp; <span class="built_in">pwd</span>)</span><br><span class="line">dest=<span class="variable">$&#123;D&#125;</span>/Desktop</span><br></pre></td></tr></table></figure>
+<h3 id="Shell-ssh-嵌套登陆远程服务器"><a href="#Shell-ssh-嵌套登陆远程服务器" class="headerlink" title="Shell ssh 嵌套登陆远程服务器"></a>Shell ssh 嵌套登陆远程服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">ssh -i root@&#123;IP1&#125; bash &lt;&lt;EOF</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====outer====="</span></span><br><span class="line">ssh -i root@&#123;IP2&#125; bash &lt;&lt;EOF2</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====inner====="</span></span><br><span class="line">EOF2</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>linux</tag>
@@ -77,7 +80,7 @@
   <entry>
     <title>visual studio 常用快捷键</title>
     <url>/2020/02/02/visual-studio-key-map/</url>
-    <content><![CDATA[<figure class="highlight"><table><tr><td class="code"><pre><span class="line"># control + `	   			切换到终端</span><br><span class="line"># cmd + shift + k			删除一行</span><br><span class="line"># cmd + d							选择同一个文件中相同单词</span><br><span class="line"># shift + alt +↑\↓		复制一行文字到下一行/上一行</span><br><span class="line"># cmd + shift + enter	向上插入空行</span><br><span class="line"># cmd + enter					向下插入空行</span><br><span class="line"># cmd + delete 				删除光标左边的文字</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h3 id="常用的快捷键"><a href="#常用的快捷键" class="headerlink" title="常用的快捷键"></a>常用的快捷键</h3><figure class="highlight"><table><tr><td class="code"><pre><span class="line"># control + `	   			切换到终端</span><br><span class="line"># cmd + shift + k			删除一行</span><br><span class="line"># cmd + d							选择同一个文件中相同单词</span><br><span class="line"># shift + alt +↑\↓		复制一行文字到下一行/上一行</span><br><span class="line"># cmd + shift + enter	向上插入空行</span><br><span class="line"># cmd + enter					向下插入空行</span><br><span class="line"># cmd + delete 				删除光标左边的文字</span><br><span class="line"># shift + option + f	格式化代码</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>运维</tag>
