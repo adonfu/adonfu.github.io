@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-12T07:15:50.924Z</updated>
+  <updated>2020-04-01T02:02:04.071Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2020/03/12/osx_pycharm_activate_permanently/"/>
     <id>http://yoursite.com/2020/03/12/osx_pycharm_activate_permanently/</id>
     <published>2020-03-12T15:17:48.000Z</published>
-    <updated>2020-03-12T07:15:50.924Z</updated>
+    <updated>2020-04-01T02:02:04.071Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="破解补丁"><a href="#破解补丁" class="headerlink" title="破解补丁"></a>破解补丁</h3><ul><li><p>下载: jetbrains-agent.jar<br>链接:<a href="https://pan.baidu.com/s/1yiwdHVIwk80wXal81GxS5g" target="_blank" rel="noopener">https://pan.baidu.com/s/1yiwdHVIwk80wXal81GxS5g</a>  密码:5k39</p></li><li><p>pycharm<br>链接:<a href="https://pan.baidu.com/s/1oXsKqLO5j0YNWy7iL2X4ZA" target="_blank" rel="noopener">https://pan.baidu.com/s/1oXsKqLO5j0YNWy7iL2X4ZA</a>  密码:q3pg<br>或<br>官方安装包: <a href="https://www.jetbrains.com/pycharm/download/#section=mac" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=mac</a></p></li></ul><p>安装pycharm完成后，可以使用free license, 然后创建一个project;</p><h3 id="VM-Options修改"><a href="#VM-Options修改" class="headerlink" title="VM Options修改"></a>VM Options修改</h3><ul><li>打开pycharm, Help -&gt; Edit Custom VM Options…<br>在最后添加: “-javaagent:/Applications/PyCharm.app/Contents/bin/jetbrains-agent.jar”<br><img src="/assets/pycharm_vmoptions.jpg" alt="avatar"></li></ul><p>保存，然后重启Pycharm。</p><p>若Pycharm打不开，可以删除~/Library/Preferences/PyCharm2019.3 文件夹</p><h3 id="License-server激活方式"><a href="#License-server激活方式" class="headerlink" title="License server激活方式"></a>License server激活方式</h3><p>点击 Help -&gt; Register… , 选择 “License Server”方式激活，输入：<br>server: <a href="http://fls.jetbrains-license-server" target="_blank" rel="noopener">http://fls.jetbrains-license-server</a></p><p><img src="/assets/pycharm_license.jpg" alt="avatar"></p><h3 id="查看有效期"><a href="#查看有效期" class="headerlink" title="查看有效期"></a>查看有效期</h3><p>点击 Help-&gt;About, 查看pycharm有效期，服务器激活是没有期限的，即为永久有效。</p><p><img src="/assets/about_pycharm.jpg" alt="avatar"></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="破解补丁"><a href="#破解补丁" class="headerlink" title="破解补丁"></a>破解补丁</h3><ul><li><p>下载: jetbrains-agent.jar<br>链接:<a href="https://pan.baidu.com/s/1yiwdHVIwk80wXal81GxS5g" target="_blank" rel="noopener">https://pan.baidu.com/s/1yiwdHVIwk80wXal81GxS5g</a>  密码:5k39</p></li><li><p>pycharm<br>链接:<a href="https://pan.baidu.com/s/1oXsKqLO5j0YNWy7iL2X4ZA" target="_blank" rel="noopener">https://pan.baidu.com/s/1oXsKqLO5j0YNWy7iL2X4ZA</a>  密码:q3pg<br>或<br>官方安装包: <a href="https://www.jetbrains.com/pycharm/download/#section=mac" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=mac</a></p></li></ul><p>安装pycharm完成后，可以使用free license, 然后创建一个project;</p><h3 id="VM-Options修改"><a href="#VM-Options修改" class="headerlink" title="VM Options修改"></a>VM Options修改</h3><ul><li>打开pycharm, Help -&gt; Edit Custom VM Options…<br>在最后添加: “-javaagent:/Applications/PyCharm.app/Contents/bin/jetbrains-agent.jar”<br><img src="/assets/pycharm_vmoptions.jpg" alt="avatar"></li></ul><p>保存，然后重启Pycharm。</p><p>若Pycharm打不开，可以删除~/Library/Preferences/PyCharm2019.3 文件夹</p><h3 id="License-server激活方式"><a href="#License-server激活方式" class="headerlink" title="License server激活方式"></a>License server激活方式</h3><p>点击 Help -&gt; Register… , 选择 “License Server”方式激活，输入：<br>server: <a href="http://fls.jetbrains-license-server" target="_blank" rel="noopener">http://fls.jetbrains-license-server</a></p><p><img src="/assets/pycharm_license.jpg" alt="avatar"></p><h3 id="查看有效期"><a href="#查看有效期" class="headerlink" title="查看有效期"></a>查看有效期</h3><p>点击 Help-&gt;About, 查看pycharm有效期，服务器激活是没有期限的，即为永久有效。</p><p><img src="/assets/about_pycharm.png" alt="avatar"></p>]]></content>
     
     <summary type="html">
     
@@ -66,31 +66,6 @@
   </entry>
   
   <entry>
-    <title>linux bash shell</title>
-    <link href="http://yoursite.com/2020/02/02/bash-shell/"/>
-    <id>http://yoursite.com/2020/02/02/bash-shell/</id>
-    <published>2020-02-02T15:19:33.000Z</published>
-    <updated>2020-02-13T09:18:57.276Z</updated>
-    
-    <content type="html"><![CDATA[<p>shell普通变量：包含字母、数字和下划线;</p><h3 id="shell-特殊变量"><a href="#shell-特殊变量" class="headerlink" title="shell 特殊变量"></a>shell 特殊变量</h3><div class="table-container"><table><thead><tr><th>变量</th><th>含义</th></tr></thead><tbody><tr><td>$0</td><td>当前脚本的文件名</td></tr><tr><td>$n</td><td>传递给脚本或函数的参数。n 是一个数字，表示第几个参数。例如，第一个参数是1，第二个参数是2</td></tr><tr><td>$#</td><td>传递给脚本或函数的参数个数</td></tr><tr><td>$*</td><td>传递给脚本或函数的所有参数</td></tr><tr><td>$@</td><td>传递给脚本或函数的所有参数; 被双引号(“ “)包含时，与 $* 稍有不同</td></tr><tr><td>$?</td><td>上个命令的退出状态，或函数的返回值</td></tr><tr><td>$$</td><td>当前 Shell 进程 ID。对于 Shell 脚本，就是这些脚本所在的进程 ID</td></tr></tbody></table></div><p>*和@的区别：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">∗和 @ 都表示传递给函数或脚本的所有参数，不被双引号(" ")包含时，都以"1""2" … "$n" 的形式输出所有参数。</span><br><span class="line">但是当它们被双引号(" ")包含时，"∗"会将所有的参数作为一个整体，以"1 2…n"的形式输出所有参数；"@"会将各个参数分开，以"1" "2"…"n" 的形式输出所有参数。</span><br></pre></td></tr></table></figure><h3 id="shell-if-语句"><a href="#shell-if-语句" class="headerlink" title="shell if 语句"></a>shell if 语句</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if [ -f "$file" ] then</span><br><span class="line">echo "Ture"</span><br><span class="line">else</span><br><span class="line">echo "False"</span><br></pre></td></tr></table></figure><p>-f file    : file是文件为True</p><p>-d file    : 是目录为True</p><p>-r file    : file可读为True</p><p>-s file    : file</p><p>-w file    : file可写为true</p><p>-x file    : file 可执行为true</p><p>-n $str1    :     $str1不是null 为True</p><p>-z $str1    :    $str1是null，为true</p><p>e.g 判断不同的操作系统</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$(uname)</span>"</span> == <span class="string">"Darwin"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Mac OS X 操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 5)"</span> == <span class="string">"Linux"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"GNU/Linux操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 10)"</span> == <span class="string">"MINGW32_NT"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Windows NT操作系统"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure><h3 id="Shell-printf-命令"><a href="#Shell-printf-命令" class="headerlink" title="Shell printf 命令"></a>Shell printf 命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span> -v str <span class="string">"%02d"</span> 1</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$str</span></span><br></pre></td></tr></table></figure><h3 id="Shell-获取当前路径"><a href="#Shell-获取当前路径" class="headerlink" title="Shell 获取当前路径"></a>Shell 获取当前路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">D=$(<span class="built_in">cd</span> ~ &amp;&amp; <span class="built_in">pwd</span>)</span><br><span class="line">dest=<span class="variable">$&#123;D&#125;</span>/Desktop</span><br></pre></td></tr></table></figure><h3 id="Shell-ssh-嵌套登陆远程服务器"><a href="#Shell-ssh-嵌套登陆远程服务器" class="headerlink" title="Shell ssh 嵌套登陆远程服务器"></a>Shell ssh 嵌套登陆远程服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">ssh -i root@&#123;IP1&#125; bash &lt;&lt;EOF</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====outer====="</span></span><br><span class="line">ssh -i root@&#123;IP2&#125; bash &lt;&lt;EOF2</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====inner====="</span></span><br><span class="line">EOF2</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;shell普通变量：包含字母、数字和下划线;&lt;/p&gt;
-&lt;h3 id=&quot;shell-特殊变量&quot;&gt;&lt;a href=&quot;#shell-特殊变量&quot; class=&quot;headerlink&quot; title=&quot;shell 特殊变量&quot;&gt;&lt;/a&gt;shell 特殊变量&lt;/h3&gt;&lt;div class=
-      
-    
-    </summary>
-    
-    
-    
-      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>docker 基础知识</title>
     <link href="http://yoursite.com/2020/02/02/docker_command/"/>
     <id>http://yoursite.com/2020/02/02/docker_command/</id>
@@ -112,6 +87,31 @@
     
     
       <category term="docker" scheme="http://yoursite.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux bash shell</title>
+    <link href="http://yoursite.com/2020/02/02/bash-shell/"/>
+    <id>http://yoursite.com/2020/02/02/bash-shell/</id>
+    <published>2020-02-02T15:19:33.000Z</published>
+    <updated>2020-02-13T09:18:57.276Z</updated>
+    
+    <content type="html"><![CDATA[<p>shell普通变量：包含字母、数字和下划线;</p><h3 id="shell-特殊变量"><a href="#shell-特殊变量" class="headerlink" title="shell 特殊变量"></a>shell 特殊变量</h3><div class="table-container"><table><thead><tr><th>变量</th><th>含义</th></tr></thead><tbody><tr><td>$0</td><td>当前脚本的文件名</td></tr><tr><td>$n</td><td>传递给脚本或函数的参数。n 是一个数字，表示第几个参数。例如，第一个参数是1，第二个参数是2</td></tr><tr><td>$#</td><td>传递给脚本或函数的参数个数</td></tr><tr><td>$*</td><td>传递给脚本或函数的所有参数</td></tr><tr><td>$@</td><td>传递给脚本或函数的所有参数; 被双引号(“ “)包含时，与 $* 稍有不同</td></tr><tr><td>$?</td><td>上个命令的退出状态，或函数的返回值</td></tr><tr><td>$$</td><td>当前 Shell 进程 ID。对于 Shell 脚本，就是这些脚本所在的进程 ID</td></tr></tbody></table></div><p>*和@的区别：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">∗和 @ 都表示传递给函数或脚本的所有参数，不被双引号(" ")包含时，都以"1""2" … "$n" 的形式输出所有参数。</span><br><span class="line">但是当它们被双引号(" ")包含时，"∗"会将所有的参数作为一个整体，以"1 2…n"的形式输出所有参数；"@"会将各个参数分开，以"1" "2"…"n" 的形式输出所有参数。</span><br></pre></td></tr></table></figure><h3 id="shell-if-语句"><a href="#shell-if-语句" class="headerlink" title="shell if 语句"></a>shell if 语句</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if [ -f "$file" ] then</span><br><span class="line">echo "Ture"</span><br><span class="line">else</span><br><span class="line">echo "False"</span><br></pre></td></tr></table></figure><p>-f file    : file是文件为True</p><p>-d file    : 是目录为True</p><p>-r file    : file可读为True</p><p>-s file    : file</p><p>-w file    : file可写为true</p><p>-x file    : file 可执行为true</p><p>-n $str1    :     $str1不是null 为True</p><p>-z $str1    :    $str1是null，为true</p><p>e.g 判断不同的操作系统</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$(uname)</span>"</span> == <span class="string">"Darwin"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Mac OS X 操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 5)"</span> == <span class="string">"Linux"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"GNU/Linux操作系统"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$(expr substr $(uname -s)</span> 1 10)"</span> == <span class="string">"MINGW32_NT"</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Windows NT操作系统"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure><h3 id="Shell-printf-命令"><a href="#Shell-printf-命令" class="headerlink" title="Shell printf 命令"></a>Shell printf 命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span> -v str <span class="string">"%02d"</span> 1</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$str</span></span><br></pre></td></tr></table></figure><h3 id="Shell-获取当前路径"><a href="#Shell-获取当前路径" class="headerlink" title="Shell 获取当前路径"></a>Shell 获取当前路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">D=$(<span class="built_in">cd</span> ~ &amp;&amp; <span class="built_in">pwd</span>)</span><br><span class="line">dest=<span class="variable">$&#123;D&#125;</span>/Desktop</span><br></pre></td></tr></table></figure><h3 id="Shell-ssh-嵌套登陆远程服务器"><a href="#Shell-ssh-嵌套登陆远程服务器" class="headerlink" title="Shell ssh 嵌套登陆远程服务器"></a>Shell ssh 嵌套登陆远程服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">ssh -i root@&#123;IP1&#125; bash &lt;&lt;EOF</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====outer====="</span></span><br><span class="line">ssh -i root@&#123;IP2&#125; bash &lt;&lt;EOF2</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====inner====="</span></span><br><span class="line">EOF2</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;shell普通变量：包含字母、数字和下划线;&lt;/p&gt;
+&lt;h3 id=&quot;shell-特殊变量&quot;&gt;&lt;a href=&quot;#shell-特殊变量&quot; class=&quot;headerlink&quot; title=&quot;shell 特殊变量&quot;&gt;&lt;/a&gt;shell 特殊变量&lt;/h3&gt;&lt;div class=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
     
   </entry>
   
