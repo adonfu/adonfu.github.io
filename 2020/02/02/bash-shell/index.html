@@ -54,7 +54,7 @@
 <meta property="og:description" content="shell普通变量：包含字母、数字和下划线; shell 特殊变量    变量 含义     $0 当前脚本的文件名   $n 传递给脚本或函数的参数。n 是一个数字，表示第几个参数。例如，第一个参数是1，第二个参数是2   $# 传递给脚本或函数的参数个数   $* 传递给脚本或函数的所有参数   $@ 传递给脚本或函数的所有参数; 被双引号(“ “)包含时，与 $* 稍有不同   $? 上个命">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-02T15:19:33.000Z">
-<meta property="article:modified_time" content="2020-02-13T09:18:57.276Z">
+<meta property="article:modified_time" content="2020-06-09T00:05:39.915Z">
 <meta property="article:author" content="fuyd">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
@@ -240,7 +240,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-13 17:18:57" itemprop="dateModified" datetime="2020-02-13T17:18:57+08:00">2020-02-13</time>
+                <time title="修改时间：2020-06-09 08:05:39" itemprop="dateModified" datetime="2020-06-09T08:05:39+08:00">2020-06-09</time>
               </span>
 
           
@@ -311,6 +311,42 @@
 <h3 id="Shell-printf-命令"><a href="#Shell-printf-命令" class="headerlink" title="Shell printf 命令"></a>Shell printf 命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span> -v str <span class="string">"%02d"</span> 1</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$str</span></span><br></pre></td></tr></table></figure>
 <h3 id="Shell-获取当前路径"><a href="#Shell-获取当前路径" class="headerlink" title="Shell 获取当前路径"></a>Shell 获取当前路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">D=$(<span class="built_in">cd</span> ~ &amp;&amp; <span class="built_in">pwd</span>)</span><br><span class="line">dest=<span class="variable">$&#123;D&#125;</span>/Desktop</span><br></pre></td></tr></table></figure>
 <h3 id="Shell-ssh-嵌套登陆远程服务器"><a href="#Shell-ssh-嵌套登陆远程服务器" class="headerlink" title="Shell ssh 嵌套登陆远程服务器"></a>Shell ssh 嵌套登陆远程服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">ssh -i root@&#123;IP1&#125; bash &lt;&lt;EOF</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====outer====="</span></span><br><span class="line">ssh -i root@&#123;IP2&#125; bash &lt;&lt;EOF2</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"=====inner====="</span></span><br><span class="line">EOF2</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>匹配任意的单个字符</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配零个或多个之前出现的字符</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配一行的起始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配一行的结尾</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sed -E 's/.*(ch[0-9]&#123;5&#125;)_([0-9]&#123;14&#125;).*/\1-\2/g')</span></span><br><span class="line">\1:获取第一个匹配模式()的值，比如(ch[0-9]&#123;5&#125;)</span><br><span class="line">\2: 获取第二个匹配模式()的值</span><br></pre></td></tr></table></figure>
+<h3 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h3><h4 id="xargs命令"><a href="#xargs命令" class="headerlink" title="xargs命令"></a>xargs命令</h4><p>xargs将标准输入数据转换成命令行参数，一般与管道一起使用，过滤参数送给紧跟的命令；xargs默认命令是echo，默认定界符是空格；通过管道传给xargs的输入参数包含换行符或空格，通过xargs处理后被空格替换。</p>
+<p>xargs命令格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">somecommand | xargs &lt;option&gt; command</span><br></pre></td></tr></table></figure>
+<p>xargs option有多个，可以处理单行或多行文本输入，转换成其他格式。</p>
+<p>选项 “-I” 指定一个替换字符串 {}，这个字符串在xargs扩展时会被替换掉，当-I与xargs结合使用，每一个参数命令都会被执行一次。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kubectl -n default get pods | grep Error | awk <span class="string">'&#123;print $1&#125;'</span> | xargs -I &#123;&#125; -P 30 kubectl -n default delete pod &#123;&#125;</span><br><span class="line"><span class="comment"># 选项-P 表示最大的进程数，默认是 1</span></span><br><span class="line"><span class="comment"># 选项-I 指定一个替换字符串 &#123;&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> -x</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> `seq 50 100`;</span><br><span class="line">        <span class="keyword">do</span> d=`date -d <span class="string">"-<span class="variable">$&#123;i&#125;</span> day"</span> +<span class="string">"%Y%m%d"</span>` &amp;&amp; <span class="built_in">echo</span> <span class="variable">$d</span>  &amp;&amp; rsync --delete-before -a -H -v --progress empty/   /mnt/data//<span class="variable">$&#123;d&#125;</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看文件最后修改时间</span></span><br><span class="line">LAST_MODIFY_TIMESTAMP=`<span class="built_in">stat</span> -c %Y  nohup.out`</span><br><span class="line">formart_date=`date <span class="string">'+%Y-%m-%d %H:%M:%S'</span> -d @<span class="variable">$LAST_MODIFY_TIMESTAMP</span>`</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$formart_date</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -329,8 +365,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/02/visual-studio-key-map/" rel="prev" title="visual studio 常用快捷键">
-      <i class="fa fa-chevron-left"></i> visual studio 常用快捷键
+    <a href="/2020/02/02/kubernete/" rel="prev" title="kubernete 基础知识">
+      <i class="fa fa-chevron-left"></i> kubernete 基础知识
     </a></div>
       <div class="post-nav-item">
     <a href="/2020/02/02/docker_command/" rel="next" title="docker 基础知识">
@@ -396,7 +432,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#shell-特殊变量"><span class="nav-number">1.</span> <span class="nav-text">shell 特殊变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shell-if-语句"><span class="nav-number">2.</span> <span class="nav-text">shell if 语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-printf-命令"><span class="nav-number">3.</span> <span class="nav-text">Shell printf 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-获取当前路径"><span class="nav-number">4.</span> <span class="nav-text">Shell 获取当前路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-ssh-嵌套登陆远程服务器"><span class="nav-number">5.</span> <span class="nav-text">Shell ssh 嵌套登陆远程服务器</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#shell-特殊变量"><span class="nav-number">1.</span> <span class="nav-text">shell 特殊变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shell-if-语句"><span class="nav-number">2.</span> <span class="nav-text">shell if 语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-printf-命令"><span class="nav-number">3.</span> <span class="nav-text">Shell printf 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-获取当前路径"><span class="nav-number">4.</span> <span class="nav-text">Shell 获取当前路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-ssh-嵌套登陆远程服务器"><span class="nav-number">5.</span> <span class="nav-text">Shell ssh 嵌套登陆远程服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正则表达式"><span class="nav-number">6.</span> <span class="nav-text">正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基础命令"><span class="nav-number">7.</span> <span class="nav-text">基础命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#xargs命令"><span class="nav-number">7.1.</span> <span class="nav-text">xargs命令</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -412,14 +448,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
